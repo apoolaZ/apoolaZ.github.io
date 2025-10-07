@@ -6,19 +6,14 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
-
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+The purpose of this block diagram is to showcase the motor system (acuator) of the main project of Team 105. The motors serve as a way for the blinds to be in motion with the other three functionalities (Motion Sensor, Light Sensor, and Thermometers) hooked to the main connector with one another.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## Block Diagram 
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+
+![Indivial Block diagram ](https://raw.githubusercontent.com/apoolaZ/apoolaZ.github.io/refs/heads/main/docs/01-Block-Diagram/AMP_Draw.png)
+
+## Links
+
+[Draw.io Link](https://app.diagrams.net/#G1aYD7FA9VivMp-_CLUWaZHxGNWjbK8PjF#%7B%22pageId%22%3A%22D7A3hRXi8sjnXgM3Vncy%22%7D)
