@@ -775,8 +775,8 @@
 | Pros                                      | Cons                                                             |
 | ----------------------------------------- | ---------------------------------------------------------------- |
 | Inexpensive                               | Would need to code in depth with other portions                  |
-| Has high Thermal capailities              | Needs special PCB layout.                                        |
-| Has four function channels (Forward/Reverse/Stop/Brake) |                                                    |
+| Has high thermal capailities              | Would need to see if it would be enough for the project          |
+| Has four function channels (Forward/Reverse/Stop/Brake)                                                      |
 </code></pre>
 <ol>
 <li>
@@ -810,16 +810,16 @@
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Brush DC Motor Controller (FAN8100N)</p>
-<p><strong>Rationale:</strong> An H-bridge is one of the few ways to control a </p>
+<p><strong>Choice:</strong> Option 1: Brush DC Motor Controller (FAN8100N)</p>
+<p><strong>Rationale:</strong> An H-bridge is one of the few ways to control a DC Motor and making it move in 4 directions (Forward/Reverse/Brake/Stop). With option 1, the part is inexpensive compared to several other h-bridges and it is something that is familiar within the course. Furthermore, it can handle the thermal heat which is important as heat can be created by rapid movement which posses a safety issue with user if it reaches to a certain temperature.</p>
 <p><strong>DC Motors</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p>Brushed DC Motor Standard 12850 RPM 12VDC</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Motor1.png" data-desc-position="bottom"><img alt="" src="../Motor1.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$5.22/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070">PAN14EE12AA1</a></li>
 </ul>
 <table>
 <thead>
@@ -834,22 +834,18 @@
 <td>Requires external components and support circuitry for interface</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Is within the voltage output for the PIC</td>
+<td>Smaller than what is needed</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p>Standard Motor 10000 RPM 6V</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="Motor2.png" data-desc-position="bottom"><img alt="" src="Motor2.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$78/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/portescap/22N28-216E-286/5232871">22N28-216E.286</a></li>
 </ul>
 <table>
 <thead>
@@ -860,23 +856,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Has high RPM</td>
+<td>Too expensive for this project</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
-</tr>
-<tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td>Sizing is ideal for the electric blinds</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 1: Brushed DC Motor Standard 12850 RPM 12VDC</p>
+<p><strong>Rationale:</strong> A DC motor is the main component for the Team 105's acuator. As such, motors tend to be very expensive if not carefully selected as shown in option 2. With option 1, it would be compatible with our main project as it's voltage output is within the bounds of the PIC Microcontroller. Despite option 1 being choosen, there will need further research for other possible motors that would be big enough as this DC motor is too tiny for the project.  </p>
 <p><strong>Speaker</strong></p>
 <ol>
 <li>
