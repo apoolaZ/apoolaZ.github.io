@@ -4,9 +4,9 @@ title: Component Selection Example
 
 **H-bridge**
 
-| 1. Brush DC Motor Controller
+1. Brush DC Motor Controller
 
-    ![](FAN8100N.png)
+    ![](hbridge.png)
 
     * $1.16/each
     * [FAN8100N](https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200)
@@ -15,7 +15,7 @@ title: Component Selection Example
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Inexpensive                               | Would need to code in depth with other portions                  |
     | Has high thermal capailities              | Would need to see if it would be enough for the project          |
-    | Has four function channels (Forward/Reverse/Stop/Brake)                                                      |
+    | Has four function channels (Forward/Reverse/Stop/Brake) |
 
 1. PWM Chopper Type DC Brushed Motor Driver
 
@@ -66,35 +66,32 @@ title: Component Selection Example
 
 **Rationale:** A DC motor is the main component for the Team 105's acuator. As such, motors tend to be very expensive if not carefully selected as shown in option 2. With option 1, it would be compatible with our main project as it's voltage output is within the bounds of the PIC Microcontroller. Despite option 1 being choosen, there will need further research for other possible motors that would be big enough as this DC motor is too tiny for the project.  
 
-**Speaker**
+**MOSEFETS**
 
-1. XC1259TR-ND surface mount crystal
+1. MOSFET N-CH 60V 7A/22A TO220-3F
 
-    ![](image1.png)
+    ![](mosfet1.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $1.66/each
+    * [AOTF2618Lt](https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AOTF2618L/3603382)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+    | Inexpensive and compatible with motor     | Prone to overheating fast |
+    | Conduction and switching PWR losses are minimized                     | Vulnerable to ESD and overvoltage                                       |
 
-1. CTX936TR-ND surface mount oscillator
+1. MOSFET N/P-CH 30V 3.8A TSOT26
 
-    ![](image3.png)
+    ![](mosfet2.png)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+    * $0.42/each
+    * [DMG6601LVT-7](https://www.digikey.com/en/products/detail/diodes-incorporated/DMG6601LVT-7/3678130)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    | Fast switching speed                                              | Would need to look into the voltage   |
+    | Inexpensive                                                       | Would need to solder  |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Choice:** Option 1: MOSFET N-CH 60V 7A/22A TO220-3F
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
-
+**Rationale:** Despite option 2 would be ideal as it's inexpensive, option 1 is the ultimate choice as it is known to funtion with the PIC microcontroller without possible damage. Furthermore, option 2 would involve soldering and a seperate PCB to function which is beyound what is taught in the 304 course. 
