@@ -766,19 +766,37 @@
   <h1>Component Selection Example</h1>
 
 <p><strong>H-bridge</strong></p>
-<p>| 1. Brush DC Motor Controller</p>
-<pre><code>![](FAN8100N.png)
-
-* $1.16/each
-* [FAN8100N](https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200)
-
-| Pros                                      | Cons                                                             |
-| ----------------------------------------- | ---------------------------------------------------------------- |
-| Inexpensive                               | Would need to code in depth with other portions                  |
-| Has high thermal capailities              | Would need to see if it would be enough for the project          |
-| Has four function channels (Forward/Reverse/Stop/Brake)                                                      |
-</code></pre>
 <ol>
+<li>
+<p>Brush DC Motor Controller</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hbridge.png" data-desc-position="bottom"><img alt="" src="../hbridge.png"></a></p>
+<ul>
+<li>$1.16/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200">FAN8100N</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inexpensive</td>
+<td>Would need to code in depth with other portions</td>
+</tr>
+<tr>
+<td>Has high thermal capailities</td>
+<td>Would need to see if it would be enough for the project</td>
+</tr>
+<tr>
+<td>Has four function channels (Forward/Reverse/Stop/Brake)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
 <li>
 <p>PWM Chopper Type DC Brushed Motor Driver</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../TB67H451FNG.png" data-desc-position="bottom"><img alt="" src="../TB67H451FNG.png"></a></p>
@@ -869,14 +887,14 @@
 </ol>
 <p><strong>Choice:</strong> Option 1: Brushed DC Motor Standard 12850 RPM 12VDC</p>
 <p><strong>Rationale:</strong> A DC motor is the main component for the Team 105's acuator. As such, motors tend to be very expensive if not carefully selected as shown in option 2. With option 1, it would be compatible with our main project as it's voltage output is within the bounds of the PIC Microcontroller. Despite option 1 being choosen, there will need further research for other possible motors that would be big enough as this DC motor is too tiny for the project.  </p>
-<p><strong>Speaker</strong></p>
+<p><strong>MOSEFETS</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p>MOSFET N-CH 60V 7A/22A TO220-3F</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mosfet1.png" data-desc-position="bottom"><img alt="" src="../mosfet1.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$1.66/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AOTF2618L/3603382">AOTF2618Lt</a></li>
 </ul>
 <table>
 <thead>
@@ -887,26 +905,22 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Inexpensive and compatible with motor</td>
+<td>Prone to overheating fast</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Conduction and switching PWR losses are minimized</td>
+<td>Vulnerable to ESD and overvoltage</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p>MOSFET N/P-CH 30V 3.8A TSOT26</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../mosfet2.png" data-desc-position="bottom"><img alt="" src="../mosfet2.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$0.42/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/diodes-incorporated/DMG6601LVT-7/3678130">DMG6601LVT-7</a></li>
 </ul>
 <table>
 <thead>
@@ -917,23 +931,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Fast switching speed</td>
+<td>Would need to look into the voltage</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
-</tr>
-<tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
-<td></td>
+<td>Inexpensive</td>
+<td>Would need to solder</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Option 1: MOSFET N-CH 60V 7A/22A TO220-3F</p>
+<p><strong>Rationale:</strong> Despite option 2 would be ideal as it's inexpensive, option 1 is the ultimate choice as it is known to funtion with the PIC microcontroller without possible damage. Furthermore, option 2 would involve soldering and a seperate PCB to function which is beyound what is taught in the 304 course. </p>
 
 
 
