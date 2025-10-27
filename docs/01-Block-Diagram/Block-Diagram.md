@@ -12,8 +12,8 @@ The purpose of this block diagram is to showcase the motor system (acuator) of t
 ## Block Diagram 
 
 
-![Indivial Block diagram ](https://raw.githubusercontent.com/apoolaZ/apoolaZ.github.io/refs/heads/main/docs/01-Block-Diagram/AMP_Draw.png)
+![Indivial Block diagram ](https://raw.githubusercontent.com/apoolaZ/apoolaZ.github.io/refs/heads/main/docs/01-Block-Diagram/In_Diagram.png)
 
 ## Links
 
-[Draw.io Link](https://app.diagrams.net/#G1aYD7FA9VivMp-_CLUWaZHxGNWjbK8PjF#%7B%22pageId%22%3A%22D7A3hRXi8sjnXgM3Vncy%22%7D)
+[Draw.io Link](https://app.diagrams.net/#G1xXIYAvKuwPsKrjq1V6eLGsa49RCOz-dM#%7B%22pageId%22%3A%229SEZQWnZX4QmiDfSKDef%22%7D)
