@@ -15,7 +15,7 @@ for<br>
 
 ## Introduction
 
-* This datasheet will go over the first actuator of Team's 105 project.
+This datasheet will go over the first actuator of Team's 105 project.
 
 ### Project Summary
 
