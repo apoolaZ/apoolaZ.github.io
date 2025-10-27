@@ -13,4 +13,4 @@ This schematic is design of the first acuator that would roll the blinds up/down
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](Team105_AMP_SS.pdf), and the Zip folder of the project [*here*](Team105_AMP_SS_zip).
+The schematic as a PDF download is available [*here*](Team105_AMP_reload.png), and the Zip folder of the project [*here*](Team105_AMP_SS_zip).
