@@ -7,7 +7,7 @@ tags:
 <center>
 <font size= "6">Abriana Datasheet</font><br>
 as part of<br>
-<font size= "8"> Temperacture Equalizing Blinds</font><br>
+<font size= "8"> Temperature Equalizing Blinds</font><br>
 for<br>
 <font size= "5"> Team 105 </font><br>
 
