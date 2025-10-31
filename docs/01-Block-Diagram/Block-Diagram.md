@@ -12,7 +12,7 @@ The purpose of this block diagram is to showcase the motor system (acuator) of t
 ## Block Diagram 
 
 
-![Indivial Block diagram ](https://github.com/apoolaZ/apoolaZ.github.io/blob/main/docs/01-Block-Diagram/t105_TDD.png)
+![Indivial Block diagram ](In_Diagram.png)
 
 ## Links
 
