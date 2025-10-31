@@ -66,32 +66,3 @@ title: Component Selection Example
 
 **Rationale:** A DC motor is the main component for the Team 105's acuator. As such, motors tend to be very expensive if not carefully selected as shown in option 2. With option 1, it would be compatible with our main project as it's voltage output is within the bounds of the PIC Microcontroller. Despite option 1 being choosen, there will need further research for other possible motors that would be big enough as this DC motor is too tiny for the project.  
 
-**MOSEFETS**
-
-1. MOSFET N-CH 60V 7A/22A TO220-3F
-
-    ![](mosfet1.png)
-
-    * $1.66/each
-    * [AOTF2618Lt](https://www.digikey.com/en/products/detail/alpha-omega-semiconductor-inc/AOTF2618L/3603382)
-
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive and compatible with motor     | Prone to overheating fast |
-    | Conduction and switching PWR losses are minimized                     | Vulnerable to ESD and overvoltage                                       |
-
-1. MOSFET N/P-CH 30V 3.8A TSOT26
-
-    ![](mosfet2.png)
-
-    * $0.42/each
-    * [DMG6601LVT-7](https://www.digikey.com/en/products/detail/diodes-incorporated/DMG6601LVT-7/3678130)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Fast switching speed                                              | Would need to look into the voltage   |
-    | Inexpensive                                                       | Would need to solder  |
-
-**Choice:** Option 1: MOSFET N-CH 60V 7A/22A TO220-3F
-
-**Rationale:** Despite option 2 would be ideal as it's inexpensive, option 1 is the ultimate choice as it is known to funtion with the PIC microcontroller without possible damage. Furthermore, option 2 would involve soldering and a seperate PCB to function which is beyound what is taught in the 304 course. 
