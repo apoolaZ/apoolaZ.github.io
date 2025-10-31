@@ -37,6 +37,32 @@ title: Component Selection Example
 
 **DC Motors**
 
+1. GEARMOTOR 251 RPM 12V W/ENCODER
+
+    ![](FIT_MOTOR.png)
+
+    * $16.50/each
+    * [1738-1106-ND](https://www.digikey.com/en/products/detail/dfrobot/FIT0186/6588528)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | Requires external components and support circuitry for interface |
+    | Has the right amount of RPM and Voltage too work |                                    |
+    | Has an encoder within the motor           |
+
+
+1. GEARMOTOR 110 RPM 12V METAL
+
+    ![](3253_Motor.png)
+
+    * $33.95/each
+    * [2183-3253-ND](https://www.digikey.com/en/products/detail/pololu/3253/10450104)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | Has low RPM which is ideal                                     | Almost half the budget (expensive)     |
+    | Sizing is ideal for the electric blinds                           |
+
 1. Brushed DC Motor Standard 12850 RPM 12VDC
 
     ![](Motor1.png)
@@ -46,23 +72,11 @@ title: Component Selection Example
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
+    | Inexpensive                               | RPM doesn't match the first actuator's requirement               |
     | Is within the voltage output for the PIC  | Smaller than what is needed                                      |
 
 
-1. Standard Motor 10000 RPM 6V
+**Choice:** Option 2: GEARMOTOR 110 RPM 12V METAL
 
-    ![](Motor2.png)
-
-    * $78/each
-    * [22N28-216E.286](https://www.digikey.com/en/products/detail/portescap/22N28-216E-286/5232871)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Has high RPM                                      | Too expensive for this project      |
-    | Sizing is ideal for the electric blinds                           |
-
-**Choice:** Option 1: Brushed DC Motor Standard 12850 RPM 12VDC
-
-**Rationale:** A DC motor is the main component for the Team 105's acuator. As such, motors tend to be very expensive if not carefully selected as shown in option 2. With option 1, it would be compatible with our main project as it's voltage output is within the bounds of the PIC Microcontroller. Despite option 1 being choosen, there will need further research for other possible motors that would be big enough as this DC motor is too tiny for the project.  
-
+**Rationale:** 
+Option 2 gearmotor is the ideal choice as it's a DC motor that meets the requirements for the project. The RPM is 110 and is made out of metal as it shows that's it is sturdy enough to handle the weight and pressure of the main project. All though it it $33.95 which is pricey, it fits within the product budget. Furthermore, the motor can easily connect to the board unlike the first option.
