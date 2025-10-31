@@ -10,7 +10,6 @@ as part of<br>
 <font size= "8"> Temperature Equalizing Blinds</font><br>
 for<br>
 <font size= "5"> Team 105 </font><br>
-
 <center>
 
 
