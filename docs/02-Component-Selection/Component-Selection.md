@@ -2,37 +2,49 @@
 title: Component Selection Example
 ---
 
-**H-bridge**
+**Motion Sensors**
 
-1. Brush DC Motor Controller
+1. Sensor PIR(Passive Infrared) Low Power
 
-    ![](hbridge.png)
+    ![](MFG_PYD-1588.png)
 
-    * $1.16/each
-    * [FAN8100N](https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200)
+    * $5.03/each
+    * [PYD1598](https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Would need to code in depth with other portions                  |
-    | Has high thermal capailities              | Would need to see if it would be enough for the project          |
-    | Has four function channels (Forward/Reverse/Stop/Brake) |
+    | Has four pins                             | Expensive                                                        |
+    | Has a touchless switch                    | Low-power consumption of only 3mA at 1.8V                        |
+    | Has a digital interface for detector configuration | Only can detect through pyroceramic                     |
 
-1. PWM Chopper Type DC Brushed Motor Driver
+1. Sensor PIR (Passive Infrared) Radial, Metal Can, Lensed - 3 Lead
 
-    ![](TB67H451FNG.png)
+    ![IRAS210ST01](IRA-S210ST01.png)
 
-    * $1.29/each
-    * [TB67H451FNG](https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/TB67H451FNG-EL/11568781)
+    * $2.17/each
+    * [IRAS210ST01](https://www.digikey.com/en/products/detail/murata-electronics/IRA-S210ST01/5012561)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Has a realization of high voltage and large current drive         | Only 13 cents more expensive    |
-    | Has built-in various error detections                             | On the documentation, it is not recommended for new design |
-    |                                                                   | Need to be careful with thermal condition |
+    | Uses pyroelectric effect of pyroelectric ceramics                 | Would need to test for three items (Responsivity, white noise, and source voltage)    |
+    | Can handle 2.0 to 15.0 V of VDC power                             | Need to be careful of placement |
+    | Has a detailed datasheet                                          |                     |
+1. Sensor PIR (Passive Infrared) Dual Element TO-5-3 Lens Top Metal Can
 
-**Choice:** Option 1: Brush DC Motor Controller (FAN8100N)
+    ![ZRE200GE](ZRE200GE_sml.png)
 
-**Rationale:** An H-bridge is one of the few ways to control a DC Motor and making it move in 4 directions (Forward/Reverse/Brake/Stop). With option 1, the part is inexpensive compared to several other h-bridges and it is something that is familiar within the course. Furthermore, it can handle the thermal heat which is important as heat can be created by rapid movement which posses a safety issue with user if it reaches to a certain temperature.
+    * $1.24/each
+    * [ZRE200GE](https://www.digikey.com/en/products/detail/zilog/ZRE200GE/5147335)
+
+    | Pros                                                              | Cons                |
+    | ----------------------------------------------------------------- | ------------------- |
+    | Has high PSRR                                                     | Source Voltage is between 0.3 V to 1.4 V    |
+    | Can handle 2.0 to 15.0 V of VDC power                             | Cannot operate where there is obstructing materials|
+    | Has multiple detailed documents                                   | Cannot be exposed to direct sunlight/ automobile headlights                     |
+
+**Choice:** Option 2 - Sensor PIR (Passive Infrared) Radial, Metal Can, Lensed - 3 Lead
+
+**Rationale:** 
 
 
 **DC Motors**
