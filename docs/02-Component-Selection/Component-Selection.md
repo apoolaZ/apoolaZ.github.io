@@ -29,7 +29,7 @@ title: Component Selection Example
     | Uses pyroelectric effect of pyroelectric ceramics                 | Would need to test for three items (Responsivity, white noise, and source voltage)    |
     | Can handle 2.0 to 15.0 V of VDC power                             | Need to be careful of placement |
     | Has a detailed datasheet                                          |                     |
-    
+
 1. Sensor PIR (Passive Infrared) Dual Element TO-5-3 Lens Top Metal Can
 
     ![ZRE200GE](ZRE200GE_sml.png)
@@ -48,33 +48,20 @@ title: Component Selection Example
 **Rationale:** 
 
 
-**DC Motors**
+**OP-AMP**
 
-1. GEARMOTOR 251 RPM 12V W/ENCODER
+1. Standard (General Purpose) Amplifier 4 Circuit Rail-to-Rail 14-PDIP
 
-    ![](FIT_MOTOR.png)
+    ![op_amp](op_amp.png)
 
-    * $16.50/each
-    * [1738-1106-ND](https://www.digikey.com/en/products/detail/dfrobot/FIT0186/6588528)
+    * $0.59/each
+    * [op_amp](https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060?s=N4IgTCBcDaILYGMAOA2ADGgLAWgJYHokQBdAXyA)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Has the right amount of RPM and Voltage too work |                                    |
-    | Has an encoder within the motor           |
-
-
-1. GEARMOTOR 110 RPM 12V METAL
-
-    ![](3253_Motor.png)
-
-    * $33.95/each
-    * [2183-3253-ND](https://www.digikey.com/en/products/detail/pololu/3253/10450104)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Has low RPM which is ideal                                     | Almost half the budget (expensive)     |
-    | Sizing is ideal for the electric blinds                           |
+    | Has 5 pins |                                                           |
+    | Detailed datasheet          |                                                                  |
 
 1. Brushed DC Motor Standard 12850 RPM 12VDC
 
