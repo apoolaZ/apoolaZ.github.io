@@ -29,6 +29,7 @@ title: Component Selection Example
     | Uses pyroelectric effect of pyroelectric ceramics                 | Would need to test for three items (Responsivity, white noise, and source voltage)    |
     | Can handle 2.0 to 15.0 V of VDC power                             | Need to be careful of placement |
     | Has a detailed datasheet                                          |                     |
+    
 1. Sensor PIR (Passive Infrared) Dual Element TO-5-3 Lens Top Metal Can
 
     ![ZRE200GE](ZRE200GE_sml.png)
