@@ -689,14 +689,14 @@
 
   <h1>Component Selection Example</h1>
 
-<p><strong>H-bridge</strong></p>
+<p><strong>Motion Sensors</strong></p>
 <ol>
 <li>
-<p>Brush DC Motor Controller</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="hbridge.png" data-desc-position="bottom"><img alt="" src="hbridge.png"></a></p>
+<p>Sensor PIR(Passive Infrared) Low Power</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MFG_PYD-1588.png" data-desc-position="bottom"><img alt="" src="../MFG_PYD-1588.png"></a></p>
 <ul>
-<li>$1.16/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200">FAN8100N</a></li>
+<li>$5.03/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200">PYD1598</a></li>
 </ul>
 <table>
 <thead>
@@ -707,26 +707,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Would need to code in depth with other portions</td>
+<td>Has four pins</td>
+<td>Expensive</td>
 </tr>
 <tr>
-<td>Has high thermal capailities</td>
-<td>Would need to see if it would be enough for the project</td>
+<td>Has a touchless switch</td>
+<td>Low-power consumption of only 3mA at 1.8V</td>
 </tr>
 <tr>
-<td>Has four function channels (Forward/Reverse/Stop/Brake)</td>
-<td></td>
+<td>Has a digital interface for detector configuration</td>
+<td>Only can detect through pyroceramic</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>PWM Chopper Type DC Brushed Motor Driver</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="TB67H451FNG.png" data-desc-position="bottom"><img alt="" src="TB67H451FNG.png"></a></p>
+<p>Sensor PIR (Passive Infrared) Radial, Metal Can, Lensed - 3 Lead</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../IRA-S210ST01.png" data-desc-position="bottom"><img alt="IRAS210ST01" src="../IRA-S210ST01.png"></a></p>
 <ul>
-<li>$1.29/each</li>
-<li><a href="https://www.digikey.com/en/products/detail/toshiba-semiconductor-and-storage/TB67H451FNG-EL/11568781">TB67H451FNG</a></li>
+<li>$2.17/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/murata-electronics/IRA-S210ST01/5012561">IRAS210ST01</a></li>
 </ul>
 <table>
 <thead>
@@ -737,23 +737,54 @@
 </thead>
 <tbody>
 <tr>
-<td>Has a realization of high voltage and large current drive</td>
-<td>Only 13 cents more expensive</td>
+<td>Uses pyroelectric effect of pyroelectric ceramics</td>
+<td>Would need to test for three items (Responsivity, white noise, and source voltage)</td>
 </tr>
 <tr>
-<td>Has built-in various error detections</td>
-<td>On the documentation, it is not recommended for new design</td>
+<td>Can handle 2.0 to 15.0 V of VDC power</td>
+<td>Need to be careful of placement</td>
 </tr>
 <tr>
+<td>Has a detailed datasheet</td>
 <td></td>
-<td>Need to be careful with thermal condition</td>
+</tr>
+<tr>
+<td>1. Sensor PIR (Passive Infrared) Dual Element TO-5-3 Lens Top Metal Can</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../ZRE200GE_sml.png" data-desc-position="bottom"><img alt="ZRE200GE" src="../ZRE200GE_sml.png"></a></p>
+<ul>
+<li>$1.24/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/zilog/ZRE200GE/5147335">ZRE200GE</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Has high PSRR</td>
+<td>Source Voltage is between 0.3 V to 1.4 V</td>
+</tr>
+<tr>
+<td>Can handle 2.0 to 15.0 V of VDC power</td>
+<td>Cannot operate where there is obstructing materials</td>
+</tr>
+<tr>
+<td>Has multiple detailed documents</td>
+<td>Cannot be exposed to direct sunlight/ automobile headlights</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 1: Brush DC Motor Controller (FAN8100N)</p>
-<p><strong>Rationale:</strong> An H-bridge is one of the few ways to control a DC Motor and making it move in 4 directions (Forward/Reverse/Brake/Stop). With option 1, the part is inexpensive compared to several other h-bridges and it is something that is familiar within the course. Furthermore, it can handle the thermal heat which is important as heat can be created by rapid movement which posses a safety issue with user if it reaches to a certain temperature.</p>
+<p><strong>Choice:</strong> Option 2 - Sensor PIR (Passive Infrared) Radial, Metal Can, Lensed - 3 Lead</p>
+<p><strong>Rationale:</strong> </p>
 <p><strong>DC Motors</strong></p>
 <ol>
 <li>
