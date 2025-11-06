@@ -6,13 +6,14 @@ tags:
 ---
 
 ## Overview
-The purpose of this block diagram is to showcase the motion sensor portion of the temperature equalizing blinds. With the motion sensor, it would recieve the output from the thermoresistor sensor from the first pinout in the first connector. The motion sensor contains the information of the average temperature which allows the motion sensor to determine if the actuator moves. If the value is 1, the actuator moves with the motion sensor determining if it continues until an object/person/pet is in the way, which in turn stops.
+
+The purpose of this block diagram is to showcase the IR Emitter Detector Pair Sensor that would act as a motion sensor to stop the motor when there is an object in the way based on the light value detected from the sensor. There are two connectors as a way to transfer data from thermoresistor to the motor while giving output to motor on when to stop. 
 
 
 ## Block Diagram 
 
 
-![Indivial Block diagram ](AMP_Team105_TeamDia.drawio.png)
+![Indivial Block diagram ](Final_AMP_Team105_TeamDia.png)
 
 ## Links
 

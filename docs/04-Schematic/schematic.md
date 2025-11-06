@@ -8,7 +8,7 @@ This schematic is design of the IR Emitter Detector Pair sensor that would act a
 
 
 ![schematic](Team105_AMP_SS.png){style width:"350" height:"300;"}
-**Figure 1:** Electric Blind's First Actuator
+**Figure 1:** IR Emitter Detector Pair Sensor
 
 
 ## Resouces
