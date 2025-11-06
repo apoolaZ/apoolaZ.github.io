@@ -4,7 +4,7 @@ title: Schematic
 
 ## Overview
 
-This schematic is design of the first actuator that would roll the blinds up/down. Within the schematic, it showcases the motor being connected to the H-bridge which is linked to the PIC microcontroller. Furthermore, there is are 2 connector that would link from the thermoresistor PCB to recieve data and the second connector being the data transfer to the second actuator. Additioanly, there are multiple test points to ensure that if there is any mistakes that happen, there is a way to test it and do a fix up.
+This schematic is design of the IR Emitter Detector Pair sensor that would act as a motion sensor based on the value of light covering the sensor. As the blinds goes down, this sensor will be attached to the bottom of the blinds so once it hits a value with the light source, it would stop the motor until next action.
 
 
 ![schematic](Team105_AMP_SS.png){style width:"350" height:"300;"}
