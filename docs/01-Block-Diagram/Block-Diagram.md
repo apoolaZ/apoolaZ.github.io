@@ -13,7 +13,7 @@ The purpose of this block diagram is to showcase the IR Emitter Detector Pair Se
 ## Block Diagram 
 
 
-![Indivial Block diagram ](Final_AMP105.png)
+![Indivial Block diagram ](FINAL1_AMP.png)
 
 ## Links
 
