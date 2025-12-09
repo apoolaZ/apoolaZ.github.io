@@ -6,7 +6,7 @@ title: Component Selection Example
 
 1. Sensor PIR(Passive Infrared) Low Power
 
-    ![](MFG_PYD-1588.png)
+    ![PYD1598](MFG_PYD-1588.png)
 
     * $5.03/each
     * [PYD1598](https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200)
@@ -43,9 +43,10 @@ title: Component Selection Example
     | Something familiar                                                | Layout of pins is confusing        |
     | Uses Light value                                                  |                     |
 
-**Choice:** Option 3 - IR Emitter
+**Choice** 
+Option 3 - IR Emitter
 
-**Rationale:** 
+**Rationale** 
 Though many motion sensors use PIR Sensors to sense objects through heat, the IR Emitter uses light sensors and is something that was taught within the course. Despite being expensive compared to the other two options, the IR Emitter was given in the course which testing would be a lot easier to get it working for the main project.
 
 **OP-AMP**
@@ -60,7 +61,7 @@ Though many motion sensors use PIR Sensors to sense objects through heat, the IR
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Has 5 pins |                                                           |
+    | Has 14 pins |                                                           |
     | Detailed datasheet          |                                                                  |
 
 1. 8-Prong Op-Amp
@@ -73,9 +74,20 @@ Though many motion sensors use PIR Sensors to sense objects through heat, the IR
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Has dual channels                         | A little expensive                  |
-    | Small                                     | There a                               |
+    | Small                                     | There are offsets that need to be consider                       |
 
 
-**Choice:** 
+**Choice** 
+Option 1 - Standard (General Purpose) Amplifier 4 Circuit Rail-to-Rail 14-PDIP
 
-**Rationale:** 
+**Rationale**
+Option 1 allows a multitude of logic gates (4) which is helpful for the IR Emitter. Though the second option could be helpful for the spacing, option 1 have different gates that can be switched over just in case for different scenerios.
+
+
+## Summary
+
+|IR Emitter| $4.16|
+|14-PDIP Op Amp| $0.59|
+
+These two items are both critical for the main project that would help me achieve the goal of having a motion sensor by using light values for the actuator. 
+
