@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#summary" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -528,6 +533,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Component Selection Example
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -537,6 +553,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -798,6 +840,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -825,7 +884,7 @@
 <ol>
 <li>
 <p>Sensor PIR(Passive Infrared) Low Power</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MFG_PYD-1588.png" data-desc-position="bottom"><img alt="" src="../MFG_PYD-1588.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MFG_PYD-1588.png" data-desc-position="bottom"><img alt="PYD1598" src="../MFG_PYD-1588.png"></a></p>
 <ul>
 <li>$5.03/each</li>
 <li><a href="https://www.digikey.com/en/products/detail/fairchild-semiconductor/FAN8100N/11558200">PYD1598</a></li>
@@ -914,8 +973,9 @@
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 3 - IR Emitter</p>
-<p><strong>Rationale:</strong> 
+<p><strong>Choice</strong> 
+Option 3 - IR Emitter</p>
+<p><strong>Rationale</strong> 
 Though many motion sensors use PIR Sensors to sense objects through heat, the IR Emitter uses light sensors and is something that was taught within the course. Despite being expensive compared to the other two options, the IR Emitter was given in the course which testing would be a lot easier to get it working for the main project.</p>
 <p><strong>OP-AMP</strong></p>
 <ol>
@@ -939,7 +999,7 @@ Though many motion sensors use PIR Sensors to sense objects through heat, the IR
 <td>Requires external components and support circuitry for interface</td>
 </tr>
 <tr>
-<td>Has 5 pins</td>
+<td>Has 14 pins</td>
 <td></td>
 </tr>
 <tr>
@@ -970,14 +1030,20 @@ Though many motion sensors use PIR Sensors to sense objects through heat, the IR
 </tr>
 <tr>
 <td>Small</td>
-<td>There a</td>
+<td>There are offsets that need to be consider</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> </p>
-<p><strong>Rationale:</strong> </p>
+<p><strong>Choice</strong> 
+Option 1 - Standard (General Purpose) Amplifier 4 Circuit Rail-to-Rail 14-PDIP</p>
+<p><strong>Rationale</strong>
+Option 1 allows a multitude of logic gates (4) which is helpful for the IR Emitter. Though the second option could be helpful for the spacing, option 1 have different gates that can be switched over just in case for different scenerios.</p>
+<h2 id="summary">Summary</h2>
+<p>|IR Emitter| $4.16|
+|14-PDIP Op Amp| $0.59|</p>
+<p>These two items are both critical for the main project that would help me achieve the goal of having a motion sensor by using light values for the actuator. </p>
 
 
 
