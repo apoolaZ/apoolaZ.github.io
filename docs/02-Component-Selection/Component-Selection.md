@@ -85,7 +85,7 @@ Option 1 allows a multitude of logic gates (4) which is helpful for the IR Emitt
 
 
 ## Summary
-
+|Product| Price|
 |IR Emitter| $4.16|
 |14-PDIP Op Amp| $0.59|
 
