@@ -22,7 +22,7 @@ for<br>
 This datasheet will go over the IR Emitter sensor of Team's 105 Temperature Equalizing Blinds. Addition to that, I supported my team by ensuring the website is up-to-date with information that was changed or deleted. Furthermore, I helped with communications to ensure that we recieved parts for Team's 105 project. 
 
 
-### Project Summary
+## Project Summary
 
 This subsystem was design to act as a motion sensor for the actuator to make sure the motor system shuts off when the light value reaches below a certain threshold. As the board recieves input from Keith's subsystem, the IR Emitter calculates the light value from the sensor which then turns into a High/Low value. This is then output that is transfers to Tim's subsystem which uses it as a way to have the motor function until the motor reaches below the light threshold of 500. 
 
