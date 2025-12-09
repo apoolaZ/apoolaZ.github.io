@@ -30,23 +30,23 @@ title: Component Selection Example
     | Can handle 2.0 to 15.0 V of VDC power                             | Need to be careful of placement |
     | Has a detailed datasheet                                          |                     |
 
-1. Sensor PIR (Passive Infrared) Dual Element TO-5-3 Lens Top Metal Can
+1. IR Emitter
 
-    ![ZRE200GE](ZRE200GE_sml.png)
+    ![OPB732](MFG_OPB732_sml.png)
 
-    * $1.24/each
-    * [ZRE200GE](https://www.digikey.com/en/products/detail/zilog/ZRE200GE/5147335)
+    * $4.16/each
+    * [OPB732](https://www.digikey.com/en/products/detail/tt-electronics-optek-technology/OPB732/1637069)
 
     | Pros                                                              | Cons                |
     | ----------------------------------------------------------------- | ------------------- |
-    | Has high PSRR                                                     | Source Voltage is between 0.3 V to 1.4 V    |
-    | Can handle 2.0 to 15.0 V of VDC power                             | Cannot operate where there is obstructing materials|
-    | Has multiple detailed documents                                   | Cannot be exposed to direct sunlight/ automobile headlights                     |
+    | Has both Infrared LED and Photoresistor                           | Expensive           |
+    | Something familiar                                                | Layout of pins is confusing        |
+    | Uses Light value                                                  |                     |
 
-**Choice:** Option 2 - Sensor PIR (Passive Infrared) Radial, Metal Can, Lensed - 3 Lead
+**Choice:** Option 3 - IR Emitter
 
 **Rationale:** 
-
+Though many motion sensors use PIR Sensors to sense objects through heat, the IR Emitter uses light sensors and is something that was taught within the course. Despite being expensive compared to the other two options, the IR Emitter was given in the course which testing would be a lot easier to get it working for the main project.
 
 **OP-AMP**
 
@@ -63,20 +63,19 @@ title: Component Selection Example
     | Has 5 pins |                                                           |
     | Detailed datasheet          |                                                                  |
 
-1. Brushed DC Motor Standard 12850 RPM 12VDC
+1. 8-Prong Op-Amp
 
-    ![](Motor1.png)
+    ![TL071ACP](bug.png)
 
-    * $5.22/each
-    * [PAN14EE12AA1](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070)
+    * $0.77/each
+    * [TL071ACP](https://www.digikey.com/en/products/detail/texas-instruments/TL071ACP/378370?gclsrc=aw.ds&gad_source=1&gad_campaignid=17336967819&gbraid=0AAAAADrbLlgTcsxonNtgcFPO34hVIdP1s&gclid=Cj0KCQiAi9rJBhCYARIsALyPDtspATbE4TVAVirLXVvDT02yyz5SbZvDr89mPsYKyx_bwr2-w_l64mUaAi7FEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | RPM doesn't match the first actuator's requirement               |
-    | Is within the voltage output for the PIC  | Smaller than what is needed                                      |
+    | Has dual channels                         | A little expensive                  |
+    | Small                                     | There a                               |
 
 
-**Choice:** Option 2: GEARMOTOR 110 RPM 12V METAL
+**Choice:** 
 
 **Rationale:** 
-Option 2 gearmotor is the ideal choice as it's a DC motor that meets the requirements for the project. The RPM is 110 and is made out of metal as it shows that's it is sturdy enough to handle the weight and pressure of the main project. All though it it $33.95 which is pricey, it fits within the product budget. Furthermore, the motor can easily connect to the board unlike the first option.
