@@ -6,11 +6,11 @@ tags:
 ---
 
 ## Overview
-written context
+
+With the Bill of Materials (BOM), there is a list of what was bought throughout the whole duration of the project. Not included in the list is the shipping cost as it is vastly different and were bought in certain circumstances such as the PCB when the PCB Mill was under sudden maintenance. 
+
 
 ## Bill of Materials Example (as Table)
-
-*Table ##: An example of one approach to adding your BOM table to this section.*
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacture** | **Manufacturer #** | **Vendor Link** |**Datasheet Link** | 
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
