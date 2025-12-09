@@ -28,7 +28,7 @@ This subsystem was design to act as a motion sensor for the actuator to make sur
 
 ## My Contribution
 
-* To review the details and relationships between the system’s components, refer to the [*Block Diagram*](https://apoolaz.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
+* To review the details and relationships between the system’s components, refer to the [Block Diagram](https://apoolaz.github.io/01-Block-Diagram/Block-Diagram/) section of the datasheet.
 * To review the system’s components, refer to the [Component Selection](https://apoolaz.github.io/02-Component-Selection/Component-Selection/).
 * To review power distribution, refer to the [Power Budget](https://apoolaz.github.io/05-Power-Budget/Power-Budget/).
 * To review the layout of the individual subsystem, refer to the [Schematic](https://apoolaz.github.io/04-Schematic/schematic//).
