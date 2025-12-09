@@ -85,9 +85,11 @@ Option 1 allows a multitude of logic gates (4) which is helpful for the IR Emitt
 
 
 ## Summary
-|Product| Price|
-|IR Emitter| $4.16|
-|14-PDIP Op Amp| $0.59|
 
-These two items are both critical for the main project that would help me achieve the goal of having a motion sensor by using light values for the actuator. 
+| Product |
+|:-------|
+| IR Emitter |
+| 14-PDIP Op Amp |
+
+These two items are both critical for the main project that would help to achieve the goal of having a motion sensor by using light values for the actuator. With the IR Emitter, there is both an Infrared LED and Phototransistor that works well with the 14-PDIP Op-Amp. The Op-amp helps with getting a clearer output recieved from what the IR Emitter. This gives the PIC18F57Q43 Curiosity Nano an output which is needed to transfer data to Tim's PCB Board.  
 
